@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Membros extends Model
 {
-    protected $table = ["membros", "nome", "idade", "genero", "profissão"];
+    protected $fillable = ["membros", "nome", "idade", "genero", "profissão"];
 }
