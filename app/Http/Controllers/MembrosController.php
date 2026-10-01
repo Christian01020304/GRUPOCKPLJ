@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use app\models\Membros;
+use App\models\Membros;
 
 class MembrosController extends Controller
 {
@@ -12,7 +12,7 @@ class MembrosController extends Controller
      */
     public function index()
     {
-        Membros::all();
+        return Membros::all();
     }
 
     public function store(Request $request)
